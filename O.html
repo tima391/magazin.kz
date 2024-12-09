@@ -1,0 +1,252 @@
+<html>
+<head>
+    <title>Обувь</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Helvetica Neue", sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: #ffffff;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #0a0a0a;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+
+        .banner {
+            width: 100%;
+            height: 70vh;
+            background-image: url(https://storage.yandexcloud.net/cdn-prod.viled.kz/mainpage/banner/compressed/banner894951440951PlyqY_642202141);
+            background-size: cover;
+            background-position: center;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .bags-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .bags-section h2 {
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .bags {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .bag-item {
+            position: relative;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .bag-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .bag-item:hover {
+            transform: scale(1.05);
+        }
+
+        .bag-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bag-info h3 {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .bag-info p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .bag-info .price {
+            font-size: 1.2em;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        footer {
+            font-size: 0.9em;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.15);
+            margin-top: 40px;
+        }
+        .bag-item:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">GUBAY</div>
+        <nav class="nav-links">
+            <a href="odez.html">Одежда</a>
+            <a href="Magazin.html">Обувь</a>
+            <a href="С.html">Сумки</a>
+            <a href="Y.html">Часы</a>
+            <a href="A.html">Аксессуары</a>
+        </nav>
+        <div class="social-icons">
+            <a href="B.html"><i class="fas fa-user"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</header>
+<div class="banner"></div>
+<div class="bags-section" id="bags">
+    <h2>Мужская Обувь</h2>
+    <div class="bags">
+        <div class="bag-item" onclick="redirectToProduct('https://yourstore.com/bag1')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/3427527JHur.jpg" alt="Сумка 1">
+            <div class="bag-info">
+                <h3>Gucci</h3>
+                <p>Ботинки челси GG Supreme</p>
+                <p class="price">608 400 ₸</p>
+            </div>
+        </div>
+
+        <div class="bag-item" onclick="redirectToProduct('https://yourstore.com/bag2')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/342466PKMNC.jpg" alt="Сумка 2">
+            <div class="bag-info">
+                <h3>Palm Angels</h3>
+                <p>Кожаные кроссовки с логотипом</p>
+                <p class="price">195 800 ₸</p>
+            </div>
+        </div>
+
+        <div class="bag-item" onclick="redirectToProduct('https://yourstore.com/bag3')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/343147h5ccN.jpg" alt="Сумка 3">
+            <div class="bag-info">
+                <h3>Brunello Cucinelli</h3>
+                <p>Замшевые пенни-лоферы</p>
+                <p class="price">41 600 ₸</p>
+            </div>
+        </div>
+
+        <div class="bag-item" onclick="redirectToProduct('https://yourstore.com/bag4')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/343756REEEe.jpg" alt="Сумка 4">
+            <div class="bag-info">
+                <h3>Doucal's</h3>
+                <p>Комбинированные ботинки</p>
+                <p class="price">152 700 ₸</p>
+            </div>
+        </div>
+
+        <div class="bag-item" onclick="redirectToProduct('https://yourstore.com/bag5')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/269995tlmm9.jpeg" alt="Сумка 5">
+            <div class="bag-info">
+                <h3>Gucci</h3>
+                <p>Ботинки на шнуровке</p>
+                <p class="price">422 400 ₸</p>
+            </div>
+        </div>
+
+        <div class="bag-item" onclick="redirectToProduct('Magazin.html')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345571LO08s.jpg" alt="Сумка 6">
+            <div class="bag-info">
+                <h3>OFF-WHITE</h3>
+                <p>Комбинированные кроссовки OW Be Right Back</p>
+                <p class="price">43 000 ₸</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 GUBAY - Ваш стильный выбор.</p>
+</footer>
+
+<script>
+    function redirectToProduct(url) {
+        window.location.href = url;
+    }
+</script>
+
+</body>
+</html>

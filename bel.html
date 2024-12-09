@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин GUBAY - Шерстяная куртка New Ben</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bel.css">
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">GUBAY</div>
+        <nav class="nav-links">
+            <a href="index.html">Одежда</a>
+            <a href="O.html">Обувь</a>
+            <a href="C.html">Сумки</a>
+            <a href="Y.html">Часы</a>
+            <a href="A.html">Аксессуары</a>
+        </nav>
+        <div class="profile-cart-icons">
+            <a href="B.html"><i class="fas fa-user"></i></a>
+            <a href="kor.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="product-container">
+        <div class="photo-selector">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417eyXQb.jpg" alt="Фото 1" onclick="selectPhoto('https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417eyXQb.jpg')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417YBQeA.jpg" alt="Фото 2" onclick="selectPhoto('https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417YBQeA.jpg')">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417YYt8b.jpg" alt="Фото 3" onclick="selectPhoto('https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417YYt8b.jpg')">
+        </div>
+        <div class="selected-photo">
+            <img src="https://storage.yandexcloud.net/cdn-prod.viled.kz/v3/original/345417eyXQb.jpg" alt="Выбранное фото" id="main-photo">
+        </div>
+        <div class="product-details">
+            <h1>A.P.C. Шерстяная куртка New Ben</h1>
+            <p class="price">106 300 ₸ <span class="discounted-price">74 725 ₸</span></p>
+            <p><strong>Размер:</strong> M, L</p>
+            <a href="#" class="size-chart">Таблица размеров</a>
+            <h2>Описание</h2>
+            <p>Куртка прямого кроя из плотной шерсти. Отложной воротник из эко-овчины, застежка на молнии, два накладных кармана с клапанами на кнопках спереди, эластичные манжеты и основание в рубчик.</p>
+            <h2>Характеристики</h2>
+            <ul>
+                <li>Размер: M</li>
+                <li>Пол: мужской</li>
+                <li>Цвет: Зелёный</li>
+                <li>Материал: Шерсть</li>
+                <li>Вид: Куртки</li>
+                <li>Состав: Шерсть 75%, Полиэстер 25%</li>
+                <li>Артикул: WVBDE-H02761.JAA_M_242</li>
+            </ul>
+            <p><strong>Доступно в магазинах:</strong> г. Алматы, пр. Аль-Фараби 77/8 , Esentai Mall</p>
+            <p>Размеры: M, L</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 GUBAY - Ваш стильный выбор.</p>
+</footer>
+
+<script>
+    function selectPhoto(photo) {
+        document.getElementById('main-photo').src = photo;
+    }
+</script>
+
+</body>
+</html>

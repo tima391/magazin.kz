@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина покупок</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="kor.css">
+    <script src="kor.js" defer></script>
+</head>
+<body>
+<header>
+    <div class="nav-container">
+        <div class="logo">GUBAY</div>
+        <nav class="nav-links">
+            <a href="index.html">Одежда</a>
+            <a href="O.html">Обувь</a>
+            <a href="C.html">Сумки</a>
+            <a href="Y.html">Часы</a>
+            <a href="A.html">Аксессуары</a>
+            <a href="kor.html" class="active">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+        <div class="profile-cart-icons">
+            <a href="B.html"><i class="fas fa-user"></i></a>
+            <a href="kor.html"><i class="fas fa-shopping-cart"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <h1>Корзина покупок</h1>
+    <table class="cart-table">
+        <thead>
+            <tr>
+                <th>Продукт</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+                <th>Удалить</th>
+            </tr>
+        </thead>
+        <tbody id="cart-items">
+            <!-- Продукты корзины будут добавляться здесь -->
+        </tbody>
+    </table>
+    <div class="total">
+        <p>Общая сумма: <span id="total-price">0</span> тг</p>
+        <button id="checkout">Оформить заказ</button>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 GUBAY - Ваш стильный выбор.</p>
+</footer>
+
+</body>
+</html>
