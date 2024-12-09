@@ -1,0 +1,2 @@
+# magazin.kz
+magazin.kz
